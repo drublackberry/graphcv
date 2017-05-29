@@ -1,0 +1,62 @@
+label:  UIB
+start:  [2001,10,1]
+end:  [2004,12,15]
+place:  Universitat de les Illes Balears (UIB)
+task: BSC Telecommunication Engineering
+keywords: ["signal processing", "image processing", "programming", "algebra", "networks", "IT", "electronics"]
+---
+label:  UPC
+start:  [2005,2,1]
+end:  [2007,10,1]
+place:  Universitat Politecnica de Catalunya
+task: MSc Telecommunication Engineering
+keywords: ["signal processing", "image processing", "programming", "algebra", "networks", "IT", "electronics"]
+---
+label:  GMV-SMOS
+start:  [2007,11,1]
+end:  [2009,6,1]
+place:  GMV Aerospace and Defence
+task: Project Engineer - Developer
+keywords: ["signal processing", "image processing", "programming", "SMOS", "space", "data processing", "data analysis", "scientific computing"]
+---
+label:  GMV-SWARM
+start:  [2009,6,1]
+end:  [2011,1,30]
+place:  GMV Aerospace and Defence
+task: Tech Lead - Developer
+keywords: ["algorithms", "signal processing", "image processing", "programming", "SWARM", "simulations", "coordination", "tech lead", "space", "data processing", "data analysis", "scientific computing"]
+---
+label:  ESA-Payload
+start:  [2011,2,1]
+end:  [2014,6,1]
+place:  European Space Agency
+task: Payload Data processing engineer
+keywords: ["estimation", "algorithms", "signal processing", "image processing", "programming", "MTG", "simulations", "coordination", "procurement", "negotiation", "customer management", "space", "data processing", "data analysis", "scientific computing"]
+---
+label:  ESA-System
+start:  [2014,6,2]
+end:  "present"
+place:  European Space Agency
+task: Data Processing System Engineer
+keywords: ["estimation", "system engineering", "database", "algorithms", "signal processing", "image processing", "programming", "MTG", "simulations", "coordination", "procurement", "negotiation", "customer management", "space", "data processing", "data analysis", "scientific computing"]
+---
+label:  ESA-Datalab
+start:  [2016,9,1]
+end:  "present"
+place:  European Space Agency
+task: Tech lead MTG data analysis
+keywords: ["algorithms", "machine-learning", "statistics", "programming", "space", "finance", "simulations", "SCRUM"]
+---
+label:  Blueport
+start:  [2014,1,1]
+end:  [2015,10,1]
+place: Blueport - Entrepreneurship
+task: Data scientist - Developer
+keywords: ["algorithms", "quant", "statistics", "programming", "finance", "cloud computing"]
+---
+label:  Hoberlab
+start:  [2017,3,1]
+end:  "present"
+place:  Hoberlab
+task: Data scientist - Developer - CEO
+keywords: ["algorithms", "machine-learning", "statistics", "programming", "finance", "cloud computing"]
