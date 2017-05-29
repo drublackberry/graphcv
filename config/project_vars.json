@@ -1,0 +1,11 @@
+{
+    "AUTHOR_MAIL": "andreu.mora@gmail.com",
+    "AUTHOR_NAME": "Andreu Mora",
+    "DESCRIPTION": "Graphical resume",
+    "PROJECT_DIR": "/mnt/Workspace/Other/graphcv",
+    "PROJECT_NAME": "graphcv",
+    "PYTHONPATH_LIST": [
+        "/mnt/Workspace/Other/graphcv/src"
+    ],
+    "PYTHON_VER": "3.6"
+}
