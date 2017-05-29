@@ -1,4 +1,5 @@
 label:  UIB
+type: Education
 start:  [2001,10,1]
 end:  [2004,12,15]
 place:  Universitat de les Illes Balears (UIB)
@@ -6,6 +7,7 @@ task: BSC Telecommunication Engineering
 keywords: ["signal processing", "image processing", "programming", "algebra", "networks", "IT", "electronics"]
 ---
 label:  UPC
+type: Education
 start:  [2005,2,1]
 end:  [2007,10,1]
 place:  Universitat Politecnica de Catalunya
@@ -13,6 +15,7 @@ task: MSc Telecommunication Engineering
 keywords: ["signal processing", "image processing", "programming", "algebra", "networks", "IT", "electronics"]
 ---
 label:  GMV-SMOS
+type: Professional
 start:  [2007,11,1]
 end:  [2009,6,1]
 place:  GMV Aerospace and Defence
@@ -20,6 +23,7 @@ task: Project Engineer - Developer
 keywords: ["signal processing", "image processing", "programming", "SMOS", "space", "data processing", "data analysis", "scientific computing"]
 ---
 label:  GMV-SWARM
+type: Professional
 start:  [2009,6,1]
 end:  [2011,1,30]
 place:  GMV Aerospace and Defence
@@ -27,13 +31,15 @@ task: Tech Lead - Developer
 keywords: ["algorithms", "signal processing", "image processing", "programming", "SWARM", "simulations", "coordination", "tech lead", "space", "data processing", "data analysis", "scientific computing"]
 ---
 label:  ESA-Payload
+type: Professional
 start:  [2011,2,1]
 end:  [2014,6,1]
 place:  European Space Agency
-task: Payload Data processing engineer
+task: Payload Data processing Engineer
 keywords: ["estimation", "algorithms", "signal processing", "image processing", "programming", "MTG", "simulations", "coordination", "procurement", "negotiation", "customer management", "space", "data processing", "data analysis", "scientific computing"]
 ---
 label:  ESA-System
+type: Professional
 start:  [2014,6,2]
 end:  "present"
 place:  European Space Agency
@@ -41,6 +47,7 @@ task: Data Processing System Engineer
 keywords: ["estimation", "system engineering", "database", "algorithms", "signal processing", "image processing", "programming", "MTG", "simulations", "coordination", "procurement", "negotiation", "customer management", "space", "data processing", "data analysis", "scientific computing"]
 ---
 label:  ESA-Datalab
+type: Professional
 start:  [2016,9,1]
 end:  "present"
 place:  European Space Agency
@@ -48,15 +55,41 @@ task: Tech lead MTG data analysis
 keywords: ["algorithms", "machine-learning", "statistics", "programming", "space", "finance", "simulations", "SCRUM"]
 ---
 label:  Blueport
+type: Professional
 start:  [2014,1,1]
 end:  [2015,10,1]
-place: Blueport - Entrepreneurship
+place: Blueport / Entrepreneurship
 task: Data scientist - Developer
 keywords: ["algorithms", "quant", "statistics", "programming", "finance", "cloud computing"]
 ---
 label:  Hoberlab
+type: Professional
 start:  [2017,3,1]
 end:  "present"
-place:  Hoberlab
-task: Data scientist - Developer - CEO
+place:  Hoberlab / Entepreneurship
+task: Data scientist - Founder
+keywords: ["algorithms", "machine-learning", "statistics", "programming", "finance", "cloud computing"]
+---
+label:  Machine-Learning-MOOC
+type: Education
+start:  [2015,9,1]
+end: [2015,11,1]
+place:  Stanford / Coursera.org
+task: Machine Learning
+keywords: ["algorithms", "machine-learning", "statistics", "programming", "finance", "cloud computing"]
+---
+label:  Apache-Spark-MOOC
+type: Education
+start:  [2016,7,1]
+end: [2016,8,1]
+place:  Berkeley / edX.org
+task: Data Analysis with Apache Spark
+keywords: ["algorithms", "machine-learning", "statistics", "programming", "finance", "cloud computing"]
+---
+label:  Cloudera
+type: Education
+start:  [2014,4,1]
+end: [2014,5,1]
+place:  Cloudera
+task: Big Data Analysis (Hadoop)
 keywords: ["algorithms", "machine-learning", "statistics", "programming", "finance", "cloud computing"]
