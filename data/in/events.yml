@@ -51,7 +51,7 @@ type: Professional
 start:  [2016,9,1]
 end:  "present"
 place:  European Space Agency
-task: Tech lead MTG data analysis
+task: Tech lead
 keywords: ["algorithms", "machine-learning", "statistics", "programming", "space", "finance", "simulations", "SCRUM"]
 ---
 label:  Blueport
@@ -59,14 +59,14 @@ type: Professional
 start:  [2014,1,1]
 end:  [2015,10,1]
 place: Blueport / Entrepreneurship
-task: Data scientist - Developer
+task: Analyst - Developer
 keywords: ["algorithms", "quant", "statistics", "programming", "finance", "cloud computing"]
 ---
 label:  Hoberlab
 type: Professional
 start:  [2017,3,1]
 end:  "present"
-place:  Hoberlab / Entepreneurship
+place:  Hoberlab
 task: Data scientist - Founder
 keywords: ["algorithms", "machine-learning", "statistics", "programming", "finance", "cloud computing"]
 ---

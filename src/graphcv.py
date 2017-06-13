@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 
 
 class TimelinePlotter(object):
-    def __init__(self):
+    def __init__(self, name):
         self.events = {}
+        self.name = name
 
     def load_events(self, yml_file):
         stream = open(yml_file, "r")
@@ -20,26 +21,42 @@ class TimelinePlotter(object):
         self.assign_positions()
 
     def plot(self):
+        amp = 2.
+        angle = 45.
         plt.figure(figsize=(16, self.get_max('pos') * 3))
         for i in self.events.keys():
-            p = plt.plot([self.events[i]['start'], self.events[i]['end']],
-                         [self.events[i]['pos'], self.events[i]['pos']],
-                         marker='o', lw=4)
             role_text = self.events[i]['task'] + "\n@ " + self.events[i]['place']
             if self.events[i]['type'] == "Professional":
-                plt.text(self.events[i]['start'], self.events[i]['pos'] + 0.05, role_text,
-                         ha='left', va='bottom', rotation=45, size=7, color=p[0].get_color())
-                plt.text(self.events[i]['start'], self.events[i]['pos'] - 0.05, str(self.events[i]['start']),
+                p = plt.plot([self.events[i]['start'], self.events[i]['end']],
+                             [amp * self.events[i]['pos'], amp * self.events[i]['pos']],
+                             marker='o', lw=4, linestyle='-')
+                plt.text(self.events[i]['start'], amp*self.events[i]['pos'] + 2*0.1, role_text,
+                         ha='left', va='bottom', rotation=angle, size=8, color=p[0].get_color())
+                plt.text(self.events[i]['start'], amp*self.events[i]['pos'] - 2*0.1, str(self.events[i]['start']),
                          ha='left', va='top', size=6, rotation=0, color=p[0].get_color())
             else:
-                plt.text(self.events[i]['start'], self.events[i]['pos'] - 0.05, role_text,
-                         ha='left', va='top', rotation=-45, size=7, color=p[0].get_color())
-                plt.text(self.events[i]['start'], self.events[i]['pos'] + 0.05, str(self.events[i]['start']),
-                         ha='left', va='bottom', size=6, rotation=0, color=p[0].get_color())
+                p = plt.plot([self.events[i]['start'], self.events[i]['end']],
+                             [amp * self.events[i]['pos'], amp * self.events[i]['pos']],
+                             marker='o', lw=4, linestyle='--')
+                plt.text(self.events[i]['start'], amp*self.events[i]['pos'] - 2*0.1, role_text,
+                         ha='left', va='top', rotation=-angle, size=8, color=p[0].get_color())
+                plt.text(self.events[i]['start'], amp*self.events[i]['pos'] + 2*0.1, str(self.events[i]['start']),
+                         ha='left', va='bottom', size=7, rotation=0, color=p[0].get_color())
             self.events[i]['color'] = p[0].get_color()
-        plt.ylim(self.get_min('pos') - 2, self.get_max('pos') + 2)
-        plt.xlim(self.get_min('start') - datetime.timedelta(days=150),
-                 self.get_max('end') + datetime.timedelta(days=500))
+        plt.ylim(self.get_min('pos') - amp*4, self.get_max('pos') + amp*4)
+        min_date = self.get_min('start') - datetime.timedelta(days=150)
+        max_date = self.get_max('end') + datetime.timedelta(days=600)
+        plt.xlim(min_date, max_date)
+        plt.tick_params(axis='y', left='off', right='off', labelleft='off')
+        plt.title('Activity for ' + self.name)
+        #plt.text(self.get_min('start'), self.get_max('pos'), '- professional \n -- education',
+        #         bbox={'facecolor': 'black', 'alpha': 0.2, 'pad': 10}, fontsize=7)
+        plt.axes().xaxis.grid(alpha=0.4, linestyle='--')
+        plt.annotate(' education', xy=(max_date, self.get_min('pos') - amp*3), xytext=(max_date, -1*amp),
+                     arrowprops=dict(facecolor='black', shrink=0.05))
+        plt.annotate(' professional', xy=(max_date, self.get_max('pos') + amp*3), xytext=(max_date, 0*amp),
+                     arrowprops=dict(facecolor='black', shrink=0.05))
+        plt.plot([min_date, max_date], [-0.5*amp, -0.5*amp], 'k--', alpha=.4)
         plt.show()
 
     def assign_positions(self):
