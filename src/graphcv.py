@@ -46,7 +46,6 @@ class TimelinePlotter(object):
         past_events = []
         for i in self.events.keys():
             overlaps = self.overlaps(i, past_events)
-            print(i)
             if overlaps:
                 if self.events[i]['type'] == "Professional":
                     new_pos = min(set(range(len(self.events))) - set(overlaps))
